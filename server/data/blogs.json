@@ -1,0 +1,62 @@
+[
+  {
+    "id": "soc2-2026-guide",
+    "title": "Navigating SOC 2 Type II in 2026: The AI Automation Blueprint",
+    "slug": "soc2-2026-guide",
+    "category": "Compliance & Audit",
+    "excerpt": "A complete breakdown for CISOs and engineering leaders on automating evidence collection, eliminating audit fatigue, and cutting SOC 2 timeline from 6 months to 30 days.",
+    "content": "Achieving SOC 2 Type II compliance has historically been a painful, manual exercise involving hundreds of screenshots, spreadsheet tracking, and endless back-and-forth emails with external auditors...",
+    "author": {
+      "name": "Marcus Vance",
+      "role": "Chief Security Architect",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=250&q=80"
+    },
+    "readTime": "6 min read",
+    "publishedAt": "2026-07-15"
+  },
+  {
+    "id": "crowdstrike-vs-sentinelone-2026",
+    "title": "CrowdStrike Falcon vs SentinelOne Singularity: 2026 Deep Architectural Benchmarks",
+    "slug": "crowdstrike-vs-sentinelone-2026",
+    "category": "Tool Benchmarks",
+    "excerpt": "Side-by-side performance analysis of agent overhead, EDR response speed, ransomware rollback, and generative AI analyst capabilities (Charlotte AI vs Purple AI).",
+    "content": "Choosing the right Endpoint Detection & Response (EDR) platform is one of the most critical decisions for enterprise security teams...",
+    "author": {
+      "name": "Elena Rostova",
+      "role": "VP of Security Intelligence",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=250&q=80"
+    },
+    "readTime": "8 min read",
+    "publishedAt": "2026-07-10"
+  },
+  {
+    "id": "zero-trust-cloud-architecture",
+    "title": "Zero Trust Cloud Transformation: From IAM Sprawl to Continuous Verification",
+    "slug": "zero-trust-cloud-architecture",
+    "category": "Cloud Security",
+    "excerpt": "Step-by-step engineering playbook for transitioning multi-cloud infrastructure across AWS, Azure, and GCP into a strict Zero Trust posture.",
+    "content": "Perimeter-based security is obsolete. In modern cloud architecture, identity is the new security perimeter...",
+    "author": {
+      "name": "David Chen",
+      "role": "Senior Cloud Security Consultant",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80"
+    },
+    "readTime": "10 min read",
+    "publishedAt": "2026-07-02"
+  },
+  {
+    "id": "ai-code-remediation-security",
+    "title": "How Generative AI is Revolutionizing Vulnerability Remediation in DevSecOps",
+    "slug": "ai-code-remediation-security",
+    "category": "DevSecOps",
+    "excerpt": "Why static analysis alerts are useless without automated fix suggestions, and how SecureStack AI generates zero-breakage code patches inside PRs.",
+    "content": "For years, security tools have generated thousands of SAST and DAST alerts that developers simply ignored due to lack of context...",
+    "author": {
+      "name": "Dr. Aris Thorne",
+      "role": "Lead AI Security Researcher",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=250&q=80"
+    },
+    "readTime": "7 min read",
+    "publishedAt": "2026-06-20"
+  }
+]

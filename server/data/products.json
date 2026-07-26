@@ -1,0 +1,392 @@
+[
+  {
+    "id": "aws",
+    "name": "Amazon Web Services (AWS)",
+    "slug": "aws",
+    "category": "Cloud Provider & Security",
+    "vendor": "Amazon Web Services",
+    "logo": "AWS",
+    "pricing": {
+      "startingPrice": "$0.00 (Pay-as-you-go / Free Tier)",
+      "billingModel": "Usage-based / Reserved Instances",
+      "freeTrial": true,
+      "tierSummary": "Flexible pay-as-you-go with extensive free tier for 12 months."
+    },
+    "features": {
+      "threatDetection": true,
+      "edr": false,
+      "vulnerabilityScanning": true,
+      "automatedContainment": true,
+      "aiRemediation": true
+    },
+    "compliance": ["ISO 27001", "SOC 2 Type II", "GDPR", "HIPAA", "PCI DSS", "FedRAMP High"],
+    "cloudSupport": ["AWS Native", "Hybrid Cloud (AWS Outposts)"],
+    "aiCapabilities": "Amazon Bedrock & GuardDuty AI anomaly detection, automated IAM policy generator.",
+    "integrations": ["Splunk", "Datadog", "HashiCorp Terraform", "Jira", "Slack", "Palo Alto Networks"],
+    "deployment": "Public Cloud, Dedicated VPC, Air-Gapped GovCloud",
+    "authentication": "AWS IAM, Identity Center (SAML 2.0, SCIM), FIDO2 Hardware Keys",
+    "encryption": "KMS (AES-256), TLS 1.3 in transit, Hardware Security Modules (CloudHSM)",
+    "pros": [
+      "Unmatched global infrastructure and compliance coverage",
+      "Deep native integration with AWS Security Hub & GuardDuty",
+      "Infinite scalability with granular IAM controls"
+    ],
+    "cons": [
+      "Complex IAM policy configuration requires specialized expertise",
+      "Egress and data transfer costs can scale rapidly"
+    ],
+    "rating": 4.9,
+    "reviewCount": 12450
+  },
+  {
+    "id": "azure",
+    "name": "Microsoft Azure Security",
+    "slug": "azure",
+    "category": "Cloud Provider & Security",
+    "vendor": "Microsoft Corporation",
+    "logo": "Azure",
+    "pricing": {
+      "startingPrice": "Pay-as-you-go / Enterprise Agreement",
+      "billingModel": "Per node / usage per hour",
+      "freeTrial": true,
+      "tierSummary": "Integrated discounts with Microsoft 365 Enterprise licensing."
+    },
+    "features": {
+      "threatDetection": true,
+      "edr": true,
+      "vulnerabilityScanning": true,
+      "automatedContainment": true,
+      "aiRemediation": true
+    },
+    "compliance": ["ISO 27001", "SOC 2 Type II", "GDPR", "HIPAA", "PCI DSS", "NIST 800-53"],
+    "cloudSupport": ["Azure Native", "AWS (via Azure Arc)", "GCP (via Azure Arc)", "Hybrid"],
+    "aiCapabilities": "Microsoft Copilot for Security, automated incident response summaries.",
+    "integrations": ["Microsoft Sentinel", "Defender XDR", "ServiceNow", "Splunk", "Jira"],
+    "deployment": "Cloud SaaS, Hybrid via Azure Arc, Government Secret Cloud",
+    "authentication": "Microsoft Entra ID (Azure AD), Conditional Access, FIDO2, Passwordless",
+    "encryption": "Double Encryption at Rest (AES-256), TLS 1.3, Customer-Managed Keys (Key Vault)",
+    "pros": [
+      "Seamless integration with Microsoft 365 and Entra ID ecosystem",
+      "Multi-cloud governance enabled by Azure Arc",
+      "Copilot for Security delivers instant AI threat guidance"
+    ],
+    "cons": [
+      "Licensing tiers (E3 vs E5) can be confusing and expensive",
+      "Interface complexity in Microsoft Sentinel SIEM"
+    ],
+    "rating": 4.8,
+    "reviewCount": 9820
+  },
+  {
+    "id": "gcp",
+    "name": "Google Cloud Platform (GCP)",
+    "slug": "gcp",
+    "category": "Cloud Provider & Security",
+    "vendor": "Google Cloud",
+    "logo": "GCP",
+    "pricing": {
+      "startingPrice": "Pay-as-you-go ($300 Free Credit)",
+      "billingModel": "Per second / committed use discounts",
+      "freeTrial": true,
+      "tierSummary": "Transparent pricing with automatic sustained use discounts."
+    },
+    "features": {
+      "threatDetection": true,
+      "edr": false,
+      "vulnerabilityScanning": true,
+      "automatedContainment": true,
+      "aiRemediation": true
+    },
+    "compliance": ["ISO 27001", "SOC 2 Type II", "GDPR", "HIPAA", "PCI DSS", "FedRAMP"],
+    "cloudSupport": ["GCP Native", "Multi-Cloud via Anthos / GKE Enterprise"],
+    "aiCapabilities": "Duet AI for Security, Security Command Center Mandiant Threat Intelligence.",
+    "integrations": ["Chronicle SIEM", "BigQuery ML", "Terraform", "PagerDuty", "Slack"],
+    "deployment": "Global Public Cloud, Distributed Cloud Edge, Sovereign Cloud",
+    "authentication": "Google Cloud IAM, Workload Identity Federation, Context-Aware Access",
+    "encryption": "Default Encryption at Rest (Envelope Encryption), TLS 1.3, Cloud KMS",
+    "pros": [
+      "Industry-leading Kubernetes (GKE) and container security",
+      "Chronicle SIEM ingests petabytes of security telemetry instantly",
+      "Mandiant integration provides top-tier threat intelligence"
+    ],
+    "cons": [
+      "Smaller third-party enterprise marketplace compared to AWS",
+      "IAM hierarchy differs significantly from traditional Active Directory"
+    ],
+    "rating": 4.7,
+    "reviewCount": 7430
+  },
+  {
+    "id": "crowdstrike",
+    "name": "CrowdStrike Falcon Platform",
+    "slug": "crowdstrike",
+    "category": "Endpoint & XDR Security",
+    "vendor": "CrowdStrike Inc.",
+    "logo": "CrowdStrike",
+    "pricing": {
+      "startingPrice": "$59.99 / endpoint / year (Falcon Go)",
+      "billingModel": "Annual subscription per endpoint",
+      "freeTrial": true,
+      "tierSummary": "Tiered packages: Falcon Go, Falcon Pro, Falcon Enterprise, Falcon Elite."
+    },
+    "features": {
+      "threatDetection": true,
+      "edr": true,
+      "vulnerabilityScanning": true,
+      "automatedContainment": true,
+      "aiRemediation": true
+    },
+    "compliance": ["ISO 27001", "SOC 2 Type II", "HIPAA", "PCI DSS", "FedRAMP High"],
+    "cloudSupport": ["Windows", "macOS", "Linux", "AWS", "Azure", "GCP", "Kubernetes"],
+    "aiCapabilities": "Charlotte AI security analyst assistant, Indicator-of-Attack (IOA) AI engines.",
+    "integrations": ["Okta", "ServiceNow", "Splunk", "Zscaler", "Slack", "AWS Security Hub"],
+    "deployment": "Single lightweight cloud-native agent, 100% Cloud Architecture",
+    "authentication": "SAML 2.0, Okta, Azure AD, Multi-Factor Authentication",
+    "encryption": "TLS 1.3 encrypted telemetry stream, encrypted sensor storage",
+    "pros": [
+      "Ultra-lightweight sensor with zero impact on system performance",
+      "Best-in-class real-time EDR and threat hunting speed",
+      "Charlotte AI speeds up incident investigation by 75%"
+    ],
+    "cons": [
+      "Premium pricing model compared to legacy antivirus",
+      "Requires active cloud connectivity for full threat intelligence updates"
+    ],
+    "rating": 4.9,
+    "reviewCount": 11200
+  },
+  {
+    "id": "sentinelone",
+    "name": "SentinelOne Singularity XDR",
+    "slug": "sentinelone",
+    "category": "Endpoint & XDR Security",
+    "vendor": "SentinelOne Inc.",
+    "logo": "SentinelOne",
+    "pricing": {
+      "startingPrice": "$45.00 / endpoint / year (Control)",
+      "billingModel": "Per endpoint annual licensing",
+      "freeTrial": true,
+      "tierSummary": "Singularity Core, Control, Complete, and Enterprise XDR packages."
+    },
+    "features": {
+      "threatDetection": true,
+      "edr": true,
+      "vulnerabilityScanning": true,
+      "automatedContainment": true,
+      "aiRemediation": true
+    },
+    "compliance": ["ISO 27001", "SOC 2 Type II", "HIPAA", "PCI DSS", "FedRAMP Ready"],
+    "cloudSupport": ["Windows", "macOS", "Linux", "Cloud Workloads", "Containers", "IoT"],
+    "aiCapabilities": "Purple AI natural language security analyst, Autonomous Storyline AI.",
+    "integrations": ["Splunk", "Mimecast", "Netskope", "Okta", "Jira", "ServiceNow"],
+    "deployment": "Autonomous Cloud-managed Agent (Works offline without internet)",
+    "authentication": "SSO SAML 2.0, OAuth 2.0, Role-Based Access Control (RBAC)",
+    "encryption": "AES-256 local ledger encryption, TLS 1.3 transit encryption",
+    "pros": [
+      "1-Click automated ransomware rollback on Windows endpoints",
+      "Autonomous agent detects and blocks threats fully offline",
+      "Purple AI translates complex XDR queries into natural language"
+    ],
+    "cons": [
+      "Occasional false positives during high heuristic monitoring setup",
+      "Console UI can be dense for junior security ops"
+    ],
+    "rating": 4.8,
+    "reviewCount": 8900
+  },
+  {
+    "id": "defender",
+    "name": "Microsoft Defender for Endpoint & Cloud",
+    "slug": "defender",
+    "category": "Endpoint & XDR Security",
+    "vendor": "Microsoft Corporation",
+    "logo": "Defender",
+    "pricing": {
+      "startingPrice": "Included in M365 E5 / $15.00 standalone node/mo",
+      "billingModel": "Per user / per server instance",
+      "freeTrial": true,
+      "tierSummary": "Included in Microsoft 365 E5 / Windows 11 Enterprise."
+    },
+    "features": {
+      "threatDetection": true,
+      "edr": true,
+      "vulnerabilityScanning": true,
+      "automatedContainment": true,
+      "aiRemediation": true
+    },
+    "compliance": ["ISO 27001", "SOC 2 Type II", "HIPAA", "PCI DSS", "NIST"],
+    "cloudSupport": ["Windows", "macOS", "Linux", "iOS", "Android", "AWS", "GCP"],
+    "aiCapabilities": "Security Copilot automated investigation and remediation playbooks.",
+    "integrations": ["Microsoft Sentinel", "Entra ID", "Intune", "ServiceNow"],
+    "deployment": "Built into Windows OS (Agentless deployment on Windows 10/11)",
+    "authentication": "Microsoft Entra ID, Passwordless MFA, FIDO2",
+    "encryption": "BitLocker integration, AES-256, TLS 1.3",
+    "pros": [
+      "Native agentless integration built straight into Windows OS",
+      "Cost-effective for enterprises already on Microsoft E5 licensing",
+      "Comprehensive XDR coverage across Email, Identity, Endpoint, Cloud"
+    ],
+    "cons": [
+      "Non-Windows endpoints (macOS/Linux) require extra onboarding configuration",
+      "Management ecosystem deeply tied to Azure portal"
+    ],
+    "rating": 4.7,
+    "reviewCount": 15300
+  },
+  {
+    "id": "github",
+    "name": "GitHub Advanced Security (GHAS)",
+    "slug": "github",
+    "category": "DevSecOps & Code Security",
+    "vendor": "GitHub / Microsoft",
+    "logo": "GitHub",
+    "pricing": {
+      "startingPrice": "$49.00 / active committer / month",
+      "billingModel": "Per active committer seat",
+      "freeTrial": true,
+      "tierSummary": "Free for public open-source repos; add-on for Enterprise Cloud/Server."
+    },
+    "features": {
+      "threatDetection": true,
+      "edr": false,
+      "vulnerabilityScanning": true,
+      "automatedContainment": true,
+      "aiRemediation": true
+    },
+    "compliance": ["SOC 1", "SOC 2 Type II", "ISO 27001", "GDPR"],
+    "cloudSupport": ["Cloud (GitHub.com)", "GitHub Enterprise Server (Self-hosted)"],
+    "aiCapabilities": "Copilot Autofix (AI-powered code vulnerability suggestions directly in PRs).",
+    "integrations": ["VS Code", "Jira", "Slack", "Microsoft Teams", "Datadog", "CodeQL"],
+    "deployment": "Cloud SaaS or On-Premises GitHub Enterprise Server",
+    "authentication": "SAML SSO, SCIM provisioning, 2FA, Hardware Security Keys",
+    "encryption": "AES-256 repository encryption, TLS 1.3, Secret Scanning in memory",
+    "pros": [
+      "CodeQL engine provides deep semantic static application security testing (SAST)",
+      "Copilot Autofix automatically generates code fixes inside Pull Requests",
+      "Secret scanning blocks leaked API keys before code is pushed"
+    ],
+    "cons": [
+      "Committer-based pricing can become expensive for large dev organizations",
+      "Custom CodeQL query writing has a learning curve"
+    ],
+    "rating": 4.9,
+    "reviewCount": 18400
+  },
+  {
+    "id": "gitlab",
+    "name": "GitLab Ultimate DevSecOps",
+    "slug": "gitlab",
+    "category": "DevSecOps & Code Security",
+    "vendor": "GitLab Inc.",
+    "logo": "GitLab",
+    "pricing": {
+      "startingPrice": "$99.00 / user / month (Ultimate)",
+      "billingModel": "Per user monthly subscription",
+      "freeTrial": true,
+      "tierSummary": "Free, Premium ($29/mo), and Ultimate ($99/mo) tiers."
+    },
+    "features": {
+      "threatDetection": true,
+      "edr": false,
+      "vulnerabilityScanning": true,
+      "automatedContainment": true,
+      "aiRemediation": true
+    },
+    "compliance": ["ISO 27001", "SOC 2 Type II", "GDPR", "HIPAA"],
+    "cloudSupport": ["SaaS (GitLab.com)", "Self-Managed (AWS, Azure, GCP, K8s, On-Prem)"],
+    "aiCapabilities": "GitLab Duo Vulnerability Explanation and Automated Resolution.",
+    "integrations": ["Jira", "Kubernetes", "HashiCorp Vault", "SonarQube", "Slack"],
+    "deployment": "Cloud SaaS, Multi-Cloud Kubernetes, Self-Hosted Air-Gapped Server",
+    "authentication": "SAML 2.0, LDAP, OAuth 2.0, Keycloak, Smart Card / CAC",
+    "encryption": "Database encryption at rest, TLS 1.3, GPG signed commits",
+    "pros": [
+      "Complete single application for SCM, CI/CD, SAST, DAST, and Container Scanning",
+      "Full compliance management dashboard built natively into pipelines",
+      "Air-gapped deployment capability for government & defense"
+    ],
+    "cons": [
+      "Significant price jump from Premium ($29) to Ultimate ($99)",
+      "Complex pipeline configuration syntax for multi-stage security jobs"
+    ],
+    "rating": 4.8,
+    "reviewCount": 10500
+  },
+  {
+    "id": "okta",
+    "name": "Okta Identity Cloud",
+    "slug": "okta",
+    "category": "Identity & Access Management (IAM)",
+    "vendor": "Okta Inc.",
+    "logo": "Okta",
+    "pricing": {
+      "startingPrice": "$2.00 - $6.00 / user / month (Module based)",
+      "billingModel": "Per active user per product module",
+      "freeTrial": true,
+      "tierSummary": "Single Sign-On ($2/mo), Adaptive MFA ($3/mo), Universal Directory ($2/mo)."
+    },
+    "features": {
+      "threatDetection": true,
+      "edr": false,
+      "vulnerabilityScanning": false,
+      "automatedContainment": true,
+      "aiRemediation": true
+    },
+    "compliance": ["ISO 27001", "SOC 2 Type II", "HIPAA", "FedRAMP High", "GDPR"],
+    "cloudSupport": ["100% Cloud IAM Engine, Multi-Cloud SSO & SCIM"],
+    "aiCapabilities": "Okta AI ThreatInsight (Dynamic risk-based authentication engine).",
+    "integrations": ["7,000+ OIN Integrations (AWS, Salesforce, Google Workspace, Slack, CrowdStrike)"],
+    "deployment": "Cloud-Native Identity SaaS",
+    "authentication": "FIDO2 WebAuthn, FastPass Passwordless, Push MFA, Smart Cards",
+    "encryption": "Zero Knowledge encryption, TLS 1.3, AES-256 vault",
+    "pros": [
+      "7,000+ pre-built app integrations in the Okta Integration Network",
+      "Okta FastPass delivers seamless, passwordless phishing-resistant authentication",
+      "Adaptive MFA dynamic risk engine blocks credential stuffing automatically"
+    ],
+    "cons": [
+      "Modular pricing adds up when combining SSO, MFA, IGA, and PAM",
+      "Requires strict admin governance to prevent identity policy drift"
+    ],
+    "rating": 4.8,
+    "reviewCount": 13900
+  },
+  {
+    "id": "auth0",
+    "name": "Auth0 by Okta",
+    "slug": "auth0",
+    "category": "Identity & Access Management (IAM)",
+    "vendor": "Okta / Auth0",
+    "logo": "Auth0",
+    "pricing": {
+      "startingPrice": "$35.00 / month (B2C/B2B Developer Tier)",
+      "billingModel": "Monthly Active Users (MAU)",
+      "freeTrial": true,
+      "tierSummary": "Free (up to 25k MAU), Essentials ($35/mo), Professional ($240/mo), Enterprise."
+    },
+    "features": {
+      "threatDetection": true,
+      "edr": false,
+      "vulnerabilityScanning": false,
+      "automatedContainment": true,
+      "aiRemediation": true
+    },
+    "compliance": ["ISO 27001", "SOC 2 Type II", "HIPAA", "PCI DSS", "GDPR"],
+    "cloudSupport": ["Cloud SaaS, Private Cloud, AWS, Azure, GCP"],
+    "aiCapabilities": "Credential Stuffing AI Detection, Anomaly Detection & Attack Protection.",
+    "integrations": ["Node.js, React, Next.js, Python, Swift, Android, AWS, Stripe"],
+    "deployment": "Public Cloud SaaS, Private Cloud Deployment",
+    "authentication": "OAuth 2.0, OIDC, Passkeys, Enterprise SAML/WS-Fed, Social Logins",
+    "encryption": "BCrypt hashing, KMS AES-256 tenant data encryption, TLS 1.3",
+    "pros": [
+      "Developer-first authentication with drop-in React/SDK widgets",
+      "Auth0 Actions allow custom JavaScript pipeline hooks during authentication",
+      "Comprehensive B2B SaaS tenant management and organization branding"
+    ],
+    "cons": [
+      "MAU pricing can scale quickly for high-traffic consumer web applications",
+      "Advanced custom domain and Enterprise SAML features require higher tiers"
+    ],
+    "rating": 4.9,
+    "reviewCount": 16200
+  }
+]
